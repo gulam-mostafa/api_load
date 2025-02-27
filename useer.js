@@ -8,13 +8,17 @@ function loadUserData() {
     });
 
   function display(data) {
-    const ul = document.getElementById("user-list");
-    ul.innerHTML = " agerr data deeted"; // ✅ আগের ডাটা মুছবে
+    const postContaier = document.getElementById("user-list");
+    postContaier.innerHTML = " agerr data deeted"; // ✅ আগের ডাটা মুছবে
     for (const user of data) {
         // console.log(data[0]);
-      const li = document.createElement("li");
-      li.innerText =('-> '+ user.title );
-      ul.appendChild(li);
+      const postDiv = document.createElement('div');
+      postDiv.innerHTML =`
+      <h1>user: ${user.userId} </h1>
+      <h2>title: ${user.title} </h2>
+      <p>Description: ${user.body} </p>
+      `
+        postContaier.appendChild(postDiv)
     }
   }
 }

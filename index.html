@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Tailwind CSS CDN -->
+    <!-- Tailwind CSS CDN -->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+
+
+  <body>
+   <main>
+    <section class="flex justify-center items-center mt-6">
+      <div >
+        <h1 class="text-4xl font-bold text-blue-600">
+          Hello, Tailwind CSS & Daisy UI!
+        </h1>
+
+       <div class="flex  justify-center items-center m-8">
+        <button onclick="loadUserData()" class="btn btn-outline btn-accent m-8">Accent</button>
+        <button class="btn btn-outline btn-accent m-8" onclick="loadData()">
+          LoadData
+        </button>
+       </div>
+      </div>
+    </section>
+    <div class="flex justify-center use-container">
+      <p>Load all data</p>
+      <ul id="user-list"></ul>
+     
+    </div>
+   </main>
+
+
+
+    <script src="fetch.js"></script>
+    <script src="useer.js"></script>
+</body>
+</html>
